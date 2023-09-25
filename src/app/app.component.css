@@ -1,0 +1,112 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;     
+    font-weight: 200;
+}
+
+.capabilities-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 400px;
+}
+
+.capabilities-label {
+    background: linear-gradient(to right, #7b47dc, #055fc7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 25px;
+}
+
+.introduction-p {
+    width: 500px;
+    text-align: left;
+    background: linear-gradient(to right, #bdaed7, #8eb2dc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 17px;
+    font-family: system-ui;
+}
+
+.download-link {
+    background: linear-gradient(to right, #FF5733, #DB32A4);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 1s ease-out;
+}
+
+.download-link:hover:hover{    
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 3px 15px rgba(37, 116, 196, 0.5);
+    background: linear-gradient(to right, #DB32A4, #FF5733);
+}
+
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(37, 116, 196, 0.5);
+}
+
+.circular-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content{
+    padding: 100px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-link{
+    display: flex;
+    flex-direction: row;
+}
+
+.social-image-container {
+    background: linear-gradient(to right, #FF5733, #DB32A4);
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(37, 116, 196, 0.5);   
+    cursor: pointer;
+    transition: 1s ease-out;
+    object-fit: cover;
+  }
+
+  .social-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .social-image-container:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 3px 15px rgba(37, 116, 196, 0.5);
+    background: linear-gradient(to right, #DB32A4, #FF5733);
+  }

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'abhishekyadav';
+  title = 'Abhishek Yadav: fullstack developer';
+  
+  public open = () => {
+    window.open("../assets/abhishekyadav-resume.pdf","_blank");
+  }
 }
