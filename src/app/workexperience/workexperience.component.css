@@ -1,0 +1,56 @@
+.workex-content{
+    padding-left: 125px;
+    padding-right: 65px;
+    padding-top: 50px;
+}
+
+.year-header {
+    background: linear-gradient(to right, var(--purple), var(--blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 25px;
+}
+
+.time-line{
+    width: 80%;
+    border: 2px solid var(--orange);
+    border: 2px solid transparent; 
+    border-image: linear-gradient(to right,var(--orange), var(--magenta)); 
+    border-image-slice: 1; 
+    border-image-width: 2px;
+    border-image-outset: 0;
+    margin-top: 100px;
+    margin-left: 90px;
+    position: relative;
+}
+
+.time-line-bubble {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    background-color: var(--orange);
+    border: 2px solid var(--default);
+}
+
+.timeline{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.description-p {
+    width: 200px;
+    text-align: left;
+    background: linear-gradient(to right,var(--light-purple), var(--light-blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 17px;
+    font-family: system-ui;
+}

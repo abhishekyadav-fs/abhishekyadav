@@ -1,17 +1,19 @@
 <div id="main-container">
   <div class="header">
     <h1 style="font-size: 40px;">Abhishek Yadav</h1>
-    <div class="capabilities-header">
-      <label>Projects</label>
-      <label>Technologies</label>
-      <label>About Me</label>
+    <div class="header capabilities-header">
+      <label (click)="scrollToWorkEx()">Work Experiences</label>
+      <label (click)="scrollToTech()">Technologies</label>
+      <label (click)="scrollToAbout()">About Me</label>
     </div>
     <div class="social-link">
-      <div class="social-image-container">      
-        <img src="../assets/linkedin.png" alt="Linkedin: Abhishek yadav" class="social-image">           
+      <div class="social-image-container">  
+        <a href="https://www.linkedin.com/in/abhishekyadav2/" target="_blank">             
+         <img src="../assets/linkedin.png" alt="Linkedin: Abhishek yadav" class="social-image">
+        </a>            
       </div>
       <div class="social-image-container">
-        <a href="https://www.linkedin.com/in/abhishekyadav2/" target="_blank">
+        <a href="https://github.com/abhishekyadav-fs" target="_blank">
           <img src="../assets/github.png" alt="Github: Abhishek yadav" class="social-image">
         </a>                   
       </div>
@@ -21,14 +23,15 @@
     <div id="about-section">
       <h1 class="capabilities-label">Hello, I'm Abhishek Yadav,</h1>
       
-      <h2>full stack developer</h2>
+      <h2>fullstack developer</h2>
       <p class="introduction-p">
         highly accomplished and seasoned Senior Software Engineer with over 8years of experience
         in full-stack .NET development. 
-        Currently Working as Research and Development Engineer in Siemens. A results-driven professional 
+        currently working as Research and Development Engineer in Siemens. A results-driven professional 
         known for delivering robust, scalable, and high-performance software solutions.
-        Proficient in the complete software development lifecycle, from requirements analysis 
-        and design to implementation, testing, and deployment.
+        adept at designing and delivering systems that meet stringent non-functional requirements, 
+        including performance, security, and scalability.  
+        strong analytical thinker and problem-solver with excellent collaborative skills
       </p>
       <button (click)="open()" class="download-link">Download Resume</button>
     </div>
@@ -36,4 +39,24 @@
       <img src="../assets/abhishekyadav.png" alt="Abhishek yadav" class="circular-image">           
     </div>
   </div>
+  <div class="workex-container">
+    <div class="workexperience" #workex>
+      <app-workexperience></app-workexperience>
+    </div>
+  </div>
+  <div class="content">
+    <div class="technologies" #technologies>
+      <app-technologies></app-technologies>
+    </div>
+  </div>
+  <div class="aboutme-container">
+    <div class="aboutme" #aboutme>
+      <app-aboutme></app-aboutme>
+    </div>
+  </div>
+  <div *ngIf="{showButton}">
+    <div id="scroll-to-top" class="scroll-to-top-button" (click)="scrollToTop()">
+      <span>&uarr;</span>
+    </div>
+  </div>    
 </div>

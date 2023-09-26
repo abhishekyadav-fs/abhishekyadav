@@ -1,0 +1,51 @@
+.tech-content{
+    padding-left: 125px;
+    padding-right: 65px;
+}
+
+.tech-label {
+  cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .card {
+    border-radius: 10px;
+    border: 1px groove var(--border-default);
+    background-color: var(--background-default);
+    margin: 0 8px 15px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    box-shadow: -4px 4px 15px var(--box-shadow);
+    margin-top: 20px;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px var(--orange);
+  }
+
+  .proficient{
+    height: 50px;
+    width: 200px;
+  }
+
+  .intermediate{
+    height: 40px;
+    width: 150px;
+  }
+  
+  .beginner{
+    height: 30px;
+    width: 100px;
+  }

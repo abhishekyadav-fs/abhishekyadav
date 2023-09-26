@@ -8,18 +8,15 @@
     font-weight: 200;
 }
 
-.capabilities-header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center; 
+.capabilities-header{ 
     width: 400px;
+}
+.capabilities-header label{
+    cursor: pointer;
 }
 
 .capabilities-label {
-    background: linear-gradient(to right, #7b47dc, #055fc7);
+    background: linear-gradient(to right, var(--purple), var(--blue));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -29,7 +26,7 @@
 .introduction-p {
     width: 500px;
     text-align: left;
-    background: linear-gradient(to right, #bdaed7, #8eb2dc);
+    background: linear-gradient(to right,var(--light-purple), var(--light-blue));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -38,7 +35,7 @@
 }
 
 .download-link {
-    background: linear-gradient(to right, #FF5733, #DB32A4);
+    background: linear-gradient(to right, var(--orange), var(--magenta));
     border: none;
     color: white;
     padding: 10px 20px;
@@ -48,10 +45,10 @@
     transition: 1s ease-out;
 }
 
-.download-link:hover:hover{    
+.download-link:hover{    
     transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px rgba(37, 116, 196, 0.5);
-    background: linear-gradient(to right, #DB32A4, #FF5733);
+    box-shadow: 0px 3px 15px var(--box-shadow);
+    background: linear-gradient(to right, var(--magenta), var(--orange));
 }
 
 
@@ -60,7 +57,8 @@
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(37, 116, 196, 0.5);
+    box-shadow: 0 0 20px var(--box-shadow);
+    transition: 1s ease-out;
 }
 
 .circular-image {
@@ -68,6 +66,12 @@
     height: 100%;
     object-fit: cover;
 }
+
+/* .image-container:hover{
+    transform: scale(1.2);
+    transform: translateZ(-0.25rem);
+    box-shadow: 0 0 20px rgba(37, 116, 196, 0.5);
+} */
 
 .content{
     padding: 100px 0 0 0;
@@ -77,6 +81,11 @@
     align-content: center;
     justify-content: space-around;
     align-items: center;
+}
+
+.workex-container, .aboutme-container{
+    padding: 100px 0 0 0;
+    display: block;
 }
 
 .social-link{
@@ -110,3 +119,23 @@
     box-shadow: 0px 3px 15px rgba(37, 116, 196, 0.5);
     background: linear-gradient(to right, #DB32A4, #FF5733);
   }
+
+  .scroll-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--orange);
+    color: var(--default);
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .scroll-to-top-button:hover {
+    background-color: var(--magenta);
+  }
+  

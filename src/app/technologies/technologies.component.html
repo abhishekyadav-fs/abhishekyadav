@@ -1,0 +1,10 @@
+<div class="tech-content">
+  <h2>technologies</h2>
+  <div class="card-container">
+    <div *ngFor="let card of capabilities">
+      <div [ngClass]="['card', card.proficiency]">
+        <label class="tech-label">{{ card.title }}</label>
+      </div>
+    </div>
+  </div>
+</div>
