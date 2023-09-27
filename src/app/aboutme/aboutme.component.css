@@ -39,18 +39,17 @@
 }
 
 .mail-link {
-    background: linear-gradient(to right, var(--orange), var(--magenta));
+    background: linear-gradient(to right, var(--purple), var(--blue));
     border: none;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: 1s ease-out;
+    transition: 2s  ease-in-out;
 }
 
 .mail-link:hover{    
     transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px var(--box-shadow);
-    background: linear-gradient(to right, var(--magenta), var(--orange));
+    box-shadow: 0px 3px 15px var(--orange);
 }

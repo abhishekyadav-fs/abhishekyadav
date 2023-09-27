@@ -46,6 +46,8 @@
 
 :root {
     --default: #ffffff;
+    /* --blue: #4edec1;
+    --purple: #07878c; */
     --blue: #4e94e5;
     --purple: #8a37dd;
     --light-purple: #ccc3de;

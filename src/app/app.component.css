@@ -35,20 +35,19 @@
 }
 
 .download-link {
-    background: linear-gradient(to right, var(--orange), var(--magenta));
+    background: linear-gradient(to right, var(--purple), var(--blue));
     border: none;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: 1s ease-out;
+    transition: 2s  ease-in-out;;
 }
 
 .download-link:hover{    
     transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px var(--box-shadow);
-    background: linear-gradient(to right, var(--magenta), var(--orange));
+    box-shadow: 0px 3px 15px var(--orange);
 }
 
 
@@ -57,8 +56,8 @@
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 20px var(--box-shadow);
-    transition: 1s ease-out;
+    box-shadow: 0px 0px 20px var(--box-shadow);
+    transition: 1s  ease-in-out;;
 }
 
 .circular-image {
@@ -94,17 +93,16 @@
 }
 
 .social-image-container {
-    background: linear-gradient(to right, #FF5733, #DB32A4);
+    background: var(--default);
     height: 40px;
     width: 40px;
     border-radius: 50px;
-    color: white;
+    color: var(--default);
     padding: 10px;
     margin: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(37, 116, 196, 0.5);   
+    overflow: hidden;  
     cursor: pointer;
-    transition: 1s ease-out;
+    transition: 2s  ease-in-out;;
     object-fit: cover;
   }
 
@@ -116,8 +114,7 @@
 
   .social-image-container:hover {
     transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px rgba(37, 116, 196, 0.5);
-    background: linear-gradient(to right, #DB32A4, #FF5733);
+    box-shadow: 0px 0px 15px var(--orange);
   }
 
   .scroll-to-top-button {
@@ -126,16 +123,18 @@
     right: 20px;
     width: 40px;
     height: 40px;
-    background-color: var(--orange);
+    background-color: var(--purple);
     color: var(--default);
     font-size: 24px;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: pointer;    
+    transition: 2s ease-in-out;
   }
   
   .scroll-to-top-button:hover {
-    background-color: var(--magenta);
+    transform: translateY(-0.25rem);
+    box-shadow: 0px 3px 15px var(--orange);
   }
   
